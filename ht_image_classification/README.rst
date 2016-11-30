@@ -8,7 +8,7 @@ matching):
 
 The above integers are used with Caffe for integer labels when training.
 
-The ``labels.txt`` file next to this file shows the above semantic names in
+The ``eval/labels.txt`` file shows the above semantic names in
 index order. This would be used by the ``IndexLabelClassifier`` in SMQTK, or
 when otherwise interpreting the ``prob`` layer in resulting Caffe-trained CNN
 output.
@@ -56,3 +56,10 @@ In the solver.prototxt:
       for strong GPUs, this may be higher.
     - ``snapshot_prefix`` may be changed if the desired snapshot files should
       be named differently.
+
+Evaluation
+==========
+The ``eval`` directory contains additional notebooks for evaluating trained
+models on new image data. We assume that the new image data has run through
+the ``00.data_prep`` notebook in order to generate the ``CP1_data.csv`` file
+comtaining the cluster/ad/image relationships.
