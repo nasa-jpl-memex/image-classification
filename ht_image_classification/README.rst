@@ -8,6 +8,11 @@ matching):
 
 The above integers are used with Caffe for integer labels when training.
 
+The ``labels.txt`` file next to this file shows the above semantic names in
+index order. This would be used by the ``IndexLabelClassifier`` in SMQTK, or
+when otherwise interpreting the ``prob`` layer in resulting Caffe-trained CNN
+output.
+
 Caffe Finetuning
 ================
 Copy the "alexnet_adam" directory into your workspace.
