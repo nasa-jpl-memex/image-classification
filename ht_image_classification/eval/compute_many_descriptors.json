@@ -1,0 +1,33 @@
+{
+    "descriptor_factory": {
+        "DescriptorMemoryElement": {},
+        "type": "DescriptorMemoryElement"
+    },
+    "descriptor_generator": {
+        "CaffeDescriptorGenerator": {
+            "batch_size": 1000,
+            "data_layer": "data",
+            "gpu_device_id": 0,
+            "image_mean_filepath": "::CHANGE ME::",
+            "input_scale": null,
+            "load_truncated_images": false,
+            "network_is_bgr": true,
+            "network_model_filepath": "::CHANGE ME::",
+            "network_prototxt_filepath": "::CHANGE ME::",
+            "pixel_rescale": null,
+            "return_layer": "prob",
+            "use_gpu": true
+        },
+        "type": "CaffeDescriptorGenerator"
+    },
+    "descriptor_index": {
+        "MemoryDescriptorIndex": {
+            "file_cache": "::CHANGE ME::",
+            "pickle_protocol": -1
+        },
+        "type": "MemoryDescriptorIndex"
+    },
+    "optional_data_set": {
+        "type": null
+    }
+}

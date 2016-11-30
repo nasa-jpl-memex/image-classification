@@ -63,3 +63,7 @@ The ``eval`` directory contains additional notebooks for evaluating trained
 models on new image data. We assume that the new image data has run through
 the ``00.data_prep`` notebook in order to generate the ``CP1_data.csv`` file
 comtaining the cluster/ad/image relationships.
+
+The MEMEX official evaluation script can be found @
+
+    https://github.com/istresearch/qpr-summer-2016-eval/tree/master/CP1/CP1_eval_script.py
